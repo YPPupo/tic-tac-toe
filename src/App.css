@@ -1,53 +1,47 @@
-.container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	padding: 20% 2%;
+	gap: 10%;
+	background: rgb(26, 188, 254);
+	background: linear-gradient(
+		22deg,
+		rgba(26, 188, 254, 1) 0%,
+		rgba(10, 156, 207, 1) 100%
+	);
 }
 
-.title{
-  font-family: "Poppins";
-  top: 60px;
-  position: absolute;
-  text-align: center;
+.title-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.title {
+	font-size: 44px;
+	margin: 0;
+	text-align: center;
+	color: #FFF;
+	font-family: "Poppins";
 }
 
-.win-container{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  bottom: 50px;
-  gap: 5px;
+.game-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5vh;
+	width: 100%;
 }
 
-.message{
-  /* margin-top: 20px; */
-  font-size: 20px;
-  font-family: "Poppins";
-}
-
-.win-X{
-  color: #0F0;
-}
-
-.win-O{
-  color: #F00;
-}
-
-.draw-message{
-  color: #555;
-}
-
-.reset-button{
- width: 150px;
- font-family: "Arial";
- color: wheat;
- background-color: #FF0F0F;
- font-weight: 600;
- padding: 5px;
- border-radius: 10px;
+@media (min-width: 768px) {
+	.container {
+		padding: 0;
+		width: 100%;
+		overflow: hidden;
+	}
+	.title-container {
+		border: none;
+		padding: 3% 0 0 0;
+	}
 }

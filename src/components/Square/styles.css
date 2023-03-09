@@ -2,15 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border-collapse: collapse;
   min-width: 100%;
   min-height: 100%;
- background-color: white;
+ background-color: transparent;
 }
 
 .value{
   font-family: "Poppins";
-  font-size: 48px;
+  font-size: 70px;
+  text-shadow: 1px 1px 2px #000, 0 0 2em #000;
 }
 
 .isO{
@@ -21,3 +22,24 @@
   color: #0F0;
 }
 
+.borderTop{
+  border-top: 10px solid black;
+  border-collapse: collapse;
+}
+.borderBottom{
+  border-bottom: 10px solid black;
+  border-collapse: collapse;
+}
+.borderLeft{
+  border-left: 10px solid black;
+  border-collapse: collapse;
+}
+.borderRight{
+  border-right: 10px solid black;
+  border-collapse: collapse;
+}
+
+/* .squareImg{
+  width: 50%;
+  height: 50%;
+} */
